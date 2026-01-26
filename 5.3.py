@@ -14,3 +14,4 @@ if check == 0:
     print("Luku on alkuluku")
 else:
     print("Luku ei ole alkuluku")
+
