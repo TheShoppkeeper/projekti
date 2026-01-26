@@ -1,12 +1,12 @@
 import random
 
 nopat = []
-noppa = int(input("Anna noppien lukumäärä tai lopeta syöttämällä 0 "))
+noppa = (input("Anna noppien lukumäärä tai painamalla enter: "))
 summa = 0
 
-while noppa!=0:
-    nopat.append(noppa)
-    noppa = int(input("Anna noppien lukumäärä tai lopeta syöttämällä 0 "))
+while noppa!="":
+    nopat.append(int(noppa))
+    noppa = input("Anna noppien lukumäärä tai painamalla enter: ")
 
 for noppa in nopat:
     summa += noppa*random.randint(1,6)
