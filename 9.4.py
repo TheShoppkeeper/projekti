@@ -27,10 +27,14 @@ while True:
         auto.kiihdytys(random.randint(-10,15))
         if auto.matka > 10000:
             i = 1
+            break
         auto.kulje(1)
     if i == 1:
         break
 
 
 for auto in list:
-    print(f"-I-  Auton rekkari on {auto.rekisteritunnus}.  -I-  Huippinopeus {auto.huippunopeus}.  -I-  Nopeus {auto.nopeus} Kuljettu matka {auto.matka}  -I-" )
+    if auto.matka > 10000:
+        print(f"-I-  Auton rekkari on {auto.rekisteritunnus}.  -I-  Huippinopeus {auto.huippunopeus}.  -I-  Nopeus {auto.nopeus} Kuljettu matka {auto.matka}  -I-  VOITTAJA!!!!!!")
+    else:
+        print(f"-I-  Auton rekkari on {auto.rekisteritunnus}.  -I-  Huippinopeus {auto.huippunopeus}.  -I-  Nopeus {auto.nopeus} Kuljettu matka {auto.matka}  -I-" )
