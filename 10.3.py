@@ -12,6 +12,7 @@ class Hissi:
         self.kerros += 1
 
     def siirry_kerrokseen(self,mihin):
+        print(f"Olet nyt kerroksessa {self.kerros}")
         while self.kerros != mihin:
             if self.kerros > mihin:
                 self.kerros -= 1
